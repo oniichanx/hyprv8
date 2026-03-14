@@ -22,7 +22,8 @@ menu() {
 5. View / Edit  Decorations & Animations
 6. View / Edit  Workspace-Rules
 7. View / Edit  Workspace-Rules-new
-8. View / Edit  Choose Kitty Terminal Theme
+8. View / Edit  Change SDDM Wallpaper
+9. View / Edit  Choose Kitty Terminal Theme
 
 EOF
 }
@@ -40,7 +41,8 @@ main() {
         5) file="$UserConfigs/UserDecorAnimations.conf" ;;
         6) file="$UserConfigs/WindowRules.conf" ;;
         7) file="$UserConfigs/WindowRules-new.conf" ;;
-        8) $scriptsDir/Kitty_themes.sh ;;
+        8) $scriptsDir/sddm_wallpaper.sh ;;
+        9) $scriptsDir/Kitty_themes.sh ;;
         *) return ;;  # Do nothing for invalid choices
     esac
 

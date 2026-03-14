@@ -2,7 +2,7 @@
 # For Searching via web browsers
 
 # Define the path to the config file
-config_file=$HOME/.config/hypr/UserConfigs/01-UserDefaults.conf
+config_file=$HOME/.config/hypr/UserConfigs/Default-Apps.conf
 if ! command -v jq >/dev/null 2>&1; then
     notify-send -u low "Rofi Search" "jq is required for URL encoding. Please install jq."
     exit 1

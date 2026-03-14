@@ -1,16 +1,16 @@
 /* ---- 💫 https://github.com/oniichanx 💫 ---- */
 /* Main Config 1080p */
 
-* All main themes or configs are located in ~/.config/rofi/themes/
-* If you want to edit the config, that is where you should edit NOT here 
+/* All main themes or configs are located in ~/.config/rofi/themes/ */
+/* If you want to edit the config, that is where you should edit NOT here */
 
-* To load a new theme, manually edit the file path below or choose desired theme via rofi theme selector (choose via app menu)
+/* To load a new theme, manually edit the file path below or choose desired theme via rofi theme selector (choose via app menu) */
 
-* You can manually change here or you can use rofi theme selector SUPER ALT R */
+/* You can manually change here or you can use rofi theme selector SUPER ALT R */
 
-* TIPS 
-* If you have edited a config, rename it with a unique name. During update, the contents of 
-* ~/.config/rofi/themes/ will be replaced. */
+/* TIPS */
+/* If you have edited a config, rename it with a unique name. During update, the contents of */
+/* ~/.config/rofi/themes/ will be replaced. */
 
 /* ---- Global Configuration Fonts ---- */
 @import "~/.config/rofi/0-shared-fonts.rasi"
