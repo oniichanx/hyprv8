@@ -78,7 +78,7 @@ Or you can use the attached script | "set-hypr" | to install everything for you.
 - #### For people using systemd-boot you can do this adding `nvidia_drm.modeset=1` to the end of `/boot/loader/entries/arch.conf`.
 - #### For people update to hyprland-0.29.1 just add this line `WLR_RENDERER_ALLOW_SOFTWARE=1` to `/etc/environment`
 - #### For people update to hyprland-0.54.2 and get error with start-hyprland you just need to change SDDM Exec
-- ##### `/usr/share/xsessions` or `/usr/share/wayland-sessions` in `hyprland.desktop` on `Exec=Hyprland` to `Exec=start-hyprland` or `/usr/bin/start-hyprland`
+- ##### `/usr/share/xsessions` or `/usr/share/wayland-sessions` in `hyprland.desktop` on `Exec=Hyprland` to `Exec=start-hyprland` or `Exec=/usr/bin/start-hyprland`
 ---
 
 <details>
