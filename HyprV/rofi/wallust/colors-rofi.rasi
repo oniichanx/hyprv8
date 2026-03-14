@@ -27,5 +27,24 @@ background-color: #141112;
 background: rgba(0,0,0,0.7);
 foreground: #D4C9C9;
 border-color: #25171C;
+
+color0: #3F3C40;
+color1: #1A1022;
+color2: #492E61;
+color3: #6D3838;
+color4: #5A3978;
+color5: #994C74;
+color6: #B58E80;
+color7: #F0D6CC;
+color8: #A8958F;
+color9: #23152D;
+color10: #613D81;
+color11: #914B4B;
+color12: #784CA0;
+color13: #CC659A;
+color14: #F2BDAA;
+color15: #F0D6CC;
+
+
 }
 

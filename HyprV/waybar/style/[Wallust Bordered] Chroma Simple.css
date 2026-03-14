@@ -39,19 +39,19 @@ tooltip {
 
 #taskbar button,
 #workspaces {
-	border-radius: 20px;
+    border-radius: 20px;
     background: @background;
     opacity: 1;
     padding: 0px 10px;
     margin: 0;
     margin-top: 5px;
-	border: 2px solid @color12;
+    border: 2px solid @color12;
 }
 
 #workspaces button {
     color: @color10;
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding-right: 12px;
     border-radius: 9px;
     animation: gradient_f 20s ease-in infinite;
@@ -103,13 +103,16 @@ tooltip {
 #window,
 #wireplumber,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -124,7 +127,9 @@ tooltip {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -135,47 +140,47 @@ tooltip {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-	border-radius: 20px;
+    border-radius: 20px;
     background: @background;
     opacity: 1;
     padding: 0px 10px;
     margin: 0;
     margin-top: 5px;
-	border: 2px solid @color13;
+    border: 2px solid @color13;
 }
 
 #cpu {
     border: 2px solid @color5;
-	color: @foreground;
+    color: @foreground;
     background: @color12;
 }
 
 #memory {
-	color: @foreground;
+    color: @foreground;
     background: @color12;
 }
 
 #disk {
-	color: @foreground;
+    color: @foreground;
     background: @color12;
     border: 2px solid @color13;
 }
 
 #temperature{
-	color: @foreground;
+    color: @foreground;
     background: @color12;
 }
 
 #temperature.critical {
     color: red;
-	border: 2px solid red;
+    border: 2px solid red;
 }
 
 #custom-power {
     color: red;
     padding-left: 10px;
-	padding-right: 2px;
-	border: 2px solid red;
+    padding-right: 2px;
+    border: 2px solid red;
 }
 
 #backlight {
@@ -193,7 +198,7 @@ tooltip {
 }
 
 #mpris {
-    padding-left: 16px;	
+    padding-left: 16px; 
 }
 #tray.empty {
     background-color: transparent;
@@ -221,7 +226,7 @@ tooltip {
 #pulseaudio {
     background-color: @color12;
     color: #89b4fa;
-	border: 2px solid @color13;
+    border: 2px solid @color13;
 }
 
 #pulseaudio.muted {
@@ -233,24 +238,25 @@ tooltip {
     color: #a6e3a1;
     margin-right: 5px;
     padding-right: 15px;
-	border: 2px solid @color14;
+    border: 2px solid @color14;
 }
 
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #39FF14;
+    color: #39FF14;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.2);
 }
 
 #battery.good {
     color: #ffd57a;
-	border: 2px solid @color15;
+    border: 2px solid @color15;
 }
 
 #battery.warning {
     color: #fab387;
     border-left: 0px;
-	border: 2px solid @color12;
+    border: 2px solid @color12;
 }
 
 #battery.charging {
@@ -260,7 +266,7 @@ tooltip {
 #battery.critical {
     color: #f38ba8;
     border-left: 0px;
-	border: 2px solid @color8;
+    border: 2px solid @color8;
 }
 
 @keyframes blink {
@@ -289,23 +295,23 @@ tooltip {
 
 #backlight-slider slider,
 #pulseaudio-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
+    min-width: 0px;
+    min-height: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
 }
 
 #backlight-slider trough,
 #pulseaudio-slider trough {
-	min-width: 80px;
-	min-height: 5px;
-	border-radius: 5px;
+    min-width: 80px;
+    min-height: 5px;
+    border-radius: 5px;
 }
 
 #backlight-slider highlight,
 #pulseaudio-slider highlight {
-	min-height: 10px;
-	border-radius: 5px;
+    min-height: 10px;
+    border-radius: 5px;
 }

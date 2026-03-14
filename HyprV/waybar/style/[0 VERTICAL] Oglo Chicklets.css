@@ -72,7 +72,7 @@ button.active {
 #network,
 #power-profiles-daemon,
 #pulseaudio,
-#pulseaudio-slider,	
+#pulseaudio-slider, 
 #taskbar,
 #temperature,
 #tray,
@@ -80,13 +80,16 @@ button.active {
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -101,7 +104,9 @@ button.active {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -116,8 +121,8 @@ button.active {
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #window,
@@ -190,10 +195,10 @@ button.active {
     color: #2d353b;
     border-bottom: 8px solid #ca4853;
     animation-name: blink;
-	animation-duration: 3.0s;
-	animation-timing-function: steps(12);
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+    animation-duration: 3.0s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 label:focus {
@@ -219,6 +224,7 @@ label:focus {
 
 #custom-lock,
 #custom-light_dark,
+#custom-nightlight,
 #backlight {
     background-color: #64b6ac;
     color: #2d353b;
@@ -294,10 +300,12 @@ label:focus {
 
 #idle_inhibitor {
     background-color: #2d3436;
+    border-bottom: 8px solid #7a8c37;
 }
 
 #idle_inhibitor.activated {
     background-color: #ecf0f1;
+    border-bottom: 8px solid #7a8c37;
     color: #2d3436;
 }
 
@@ -344,7 +352,7 @@ label:focus {
 }
 
 #scratchpad.empty {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 tooltip {
@@ -386,6 +394,11 @@ tooltip label {
   min-width: 7px;
   border-radius: 5px;
   background-color: #d8ac47;
+}
+
+window#waybar.bottombar #backlight-slider trough,
+window#waybar.bottombar #pulseaudio-slider trough {
+  min-height: 7px;
 }
 
 #backlight-slider highlight,

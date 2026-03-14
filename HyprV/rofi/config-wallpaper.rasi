@@ -62,13 +62,16 @@ element selected.normal {
 }
 
 element-icon {
-  text-color: inherit;
-  size: 15%;
-  cursor: inherit;
+  text-color:                  inherit;
+  size:                        10%;
+  margin:                      -30px;
+  cursor:                      inherit;
 }
 
 element-text {
   font: "JetBrainsMono Nerd Font SemiBold 12";
   vertical-align: 0.5;
   horizontal-align: 0.5;
+  padding: 6px;
+  margin: 6px;
 }

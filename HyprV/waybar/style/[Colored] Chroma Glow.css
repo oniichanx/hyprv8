@@ -30,7 +30,7 @@ window#waybar.empty #window {
 }
 
 tooltip {
-	color: #40a02b;
+    color: #40a02b;
     background: #1e1e2e;
     opacity: 0.8;
     border-radius: 10px;
@@ -48,7 +48,7 @@ tooltip label{
     background-color: transparent;
     color: grey;
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 0px;
     border-radius: 9px;
     padding-left: 4px;
@@ -70,7 +70,7 @@ tooltip label{
 #taskbar button:hover,
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
-	color: #D3D3D3;
+    color: #D3D3D3;
     padding-left: 2px;
     padding-right: 2px;
     animation: gradient_f 20s ease-in infinite;
@@ -114,13 +114,16 @@ tooltip label{
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -135,7 +138,9 @@ tooltip label{
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -146,10 +151,10 @@ tooltip label{
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-right: 6px;
-	padding-left: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 6px;
+    padding-left: 6px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -185,12 +190,12 @@ tooltip label{
 }
 
 #battery.critical:not(.charging) {
-	color: #f53c3c;
-	animation-name: blink;
-	animation-duration: 3.0s;
-	animation-timing-function: steps(12);
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 3.0s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 label:focus {
@@ -212,6 +217,7 @@ label:focus {
 }
 
 #custom-light_dark,
+#custom-nightlight,
 #backlight {
     color: white;
 }
@@ -230,7 +236,7 @@ label:focus {
 
 #custom-swaync,
 #custom-keybinds {
-	color: #1e66f5;	
+    color: #1e66f5; 
 }
 
 #wireplumber,
@@ -248,7 +254,7 @@ label:focus {
 }
 
 #keyboard-state {
-	color: #dd7878;
+    color: #dd7878;
 }
 
 #disk {
@@ -278,7 +284,8 @@ label:focus {
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #39FF14;
+    color: #39FF14;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.2);
 }
 
 #mpd {
@@ -308,23 +315,23 @@ label:focus {
 
 #backlight-slider slider,
 #pulseaudio-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
+    min-width: 0px;
+    min-height: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
 }
 
 #backlight-slider trough,
 #pulseaudio-slider trough {
-	min-width: 80px;
-	min-height: 5px;
-	border-radius: 5px;
+    min-width: 80px;
+    min-height: 5px;
+    border-radius: 5px;
 }
 
 #backlight-slider highlight,
 #pulseaudio-slider highlight {
-	min-height: 10px;
-	border-radius: 5px;
+    min-height: 10px;
+    border-radius: 5px;
 }

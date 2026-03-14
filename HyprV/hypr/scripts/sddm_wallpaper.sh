@@ -2,6 +2,8 @@
 # /* ---- 💫 https://github.com/oniichanx 💫 ---- */
 # SDDM Wallpaper and Wallust Colors Setter
 
+# for the upcoming changes on the simple_sddm_theme
+
 # variables
 terminal=kitty
 PICTURES_DIR="$(xdg-user-dir PICTURES 2>/dev/null || echo "$HOME/Pictures")"

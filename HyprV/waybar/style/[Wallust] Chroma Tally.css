@@ -90,13 +90,16 @@ tooltip {
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -111,7 +114,9 @@ tooltip {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -200,6 +205,7 @@ tooltip {
 }
 
 #custom-light_dark,
+#custom-nightlight,
 #temperature {
     color: #7287fd;
 }
@@ -212,12 +218,14 @@ tooltip {
 #custom-hypridle,
 #idle_inhibitor {
    color: #ebcb8b;
+    border-bottom: 2px;
 }
 
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
 	color: #39FF14;
+    border-bottom: 2px;
 }
 
 #tray {

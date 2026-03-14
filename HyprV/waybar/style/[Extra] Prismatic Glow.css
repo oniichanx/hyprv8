@@ -150,13 +150,16 @@ window#waybar.empty {
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -171,7 +174,9 @@ window#waybar.empty {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -259,25 +264,25 @@ label:focus {
 
 #backlight-slider slider,
 #pulseaudio-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
+    min-width: 0px;
+    min-height: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
 }
 
 #backlight-slider trough,
 #pulseaudio-slider trough {
-	min-width: 80px;
-	min-height: 5px;
-	border-radius: 5px;
-	background-color: #6E6A86;
+    min-width: 80px;
+    min-height: 5px;
+    border-radius: 5px;
+    background-color: #6E6A86;
 }
 
 #backlight-slider highlight,
 #pulseaudio-slider highlight {
-	min-height: 10px;
-	border-radius: 5px;
-	background-color: purple;
+    min-height: 10px;
+    border-radius: 5px;
+    background-color: purple;
 }

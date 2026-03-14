@@ -50,7 +50,7 @@ window#waybar {
 }
 
 window#waybar.hidden {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 #window {
@@ -221,12 +221,14 @@ window#waybar.hidden {
   border-radius: 5px;
   margin-left: 5px;
   background-color: @blue;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.2);
   color: @black;
 }
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
   background-color: @fg;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.2);
   color: @bg0;
 }
 
@@ -286,13 +288,16 @@ window#waybar.hidden {
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -307,7 +312,9 @@ window#waybar.hidden {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -318,6 +325,6 @@ window#waybar.hidden {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-	padding-right: 5px;
-	padding-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
 }

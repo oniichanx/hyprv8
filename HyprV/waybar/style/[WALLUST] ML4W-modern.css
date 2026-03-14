@@ -25,7 +25,7 @@
 
 window#waybar {
     background-color: rgba(0,0,0,0.8);
-    border-bottom: 0px solid #ffffff;
+border-bottom: 0px solid @foreground;
     /* color: #FFFFFF; */
     background: transparent;
     transition-property: background-color;
@@ -146,13 +146,16 @@ window#waybar.empty #window {
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -167,7 +170,9 @@ window#waybar.empty #window {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -179,13 +184,13 @@ window#waybar.empty #window {
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
     margin-right: 8px;
-	margin-left: 6px;
+    margin-left: 6px;
     font-size: 100%;
     color: @iconcolor;
 }
 
 #custom-swaync {
-	margin-left: 12px;
+    margin-left: 12px;
 }
 
 #idle_inhibitor {
@@ -193,13 +198,15 @@ window#waybar.empty #window {
     font-size: 102%;
     font-weight: bold;
     color: @iconcolor;
+    border-bottom: 0px solid @foreground;
 }
 
 #idle_inhibitor.activated {
     margin-right: 15px;
     font-size: 100%;
     font-weight: bold;
-    color: #dc2f2f;
+color: @color13;
+    border-bottom: 0px solid @foreground;
 }
 
 #custom-menu {
@@ -238,12 +245,12 @@ window#waybar.empty #window {
 }
 
 #custom-updates.yellow {
-    background-color: #ff9a3c;
+background-color: @color11;
     color: #FFFFFF;
 }
 
 #custom-updates.red {
-    background-color: #dc2f2f;
+background-color: @color13;
     color: #FFFFFF;
 }
 
@@ -335,13 +342,13 @@ window#waybar.empty #window {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
+background-color: @color13;
     color: @textcolor3;
-	animation-name: blink;
-	animation-duration: 3.0s;
-	animation-timing-function: steps(12);
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+    animation-name: blink;
+    animation-duration: 3.0s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #tray {
@@ -358,23 +365,23 @@ window#waybar.empty #window {
 
 #backlight-slider slider,
 #pulseaudio-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
+    min-width: 0px;
+    min-height: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
 }
 
 #backlight-slider trough,
 #pulseaudio-slider trough {
-	min-width: 80px;
-	min-height: 5px;
-	border-radius: 5px;
+    min-width: 80px;
+    min-height: 5px;
+    border-radius: 5px;
 }
 
 #backlight-slider highlight,
 #pulseaudio-slider highlight {
-	min-height: 10px;
-	border-radius: 5px;
+    min-height: 10px;
+    border-radius: 5px;
 }

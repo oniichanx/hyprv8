@@ -35,6 +35,7 @@
       "pulseaudio",
       "group/mobo_drawer", 
       "idle_inhibitor",
+      "custom/nightlight",
       "group/power"
     ],
 

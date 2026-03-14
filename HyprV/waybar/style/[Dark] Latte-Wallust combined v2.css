@@ -32,10 +32,10 @@
 window#waybar {
     background: @background;
     border-radius:15px;
-	padding-top: 2px;
-	padding-bottom: 0px;
-	padding-right: 4px;
-	padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 tooltip {
@@ -60,7 +60,7 @@ tooltip {
 #workspaces button {
     color: @foreground;
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     border-radius: 30px;
     padding-left: 4px;
     padding-right: 4px;
@@ -93,7 +93,7 @@ tooltip {
 #workspaces button:hover {
     color: #ffd700;
     border-radius: 10px;
- 	padding-left: 2px;
+    padding-left: 2px;
     padding-right: 2px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
@@ -104,9 +104,9 @@ tooltip {
     background-color: @background-module2;
     border-radius: 10px;
     padding: 4px;
-	border-bottom: 2px solid @border-color;
-	border-right: 1px solid @button-hover;
-	border-left: 1px solid @button-hover;
+    border-bottom: 2px solid @border-color;
+    border-right: 1px solid @button-hover;
+    border-left: 1px solid @button-hover;
 }
 
 #backlight,
@@ -132,13 +132,16 @@ tooltip {
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -153,7 +156,9 @@ tooltip {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -165,8 +170,8 @@ tooltip {
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
     color: @foreground;
-	padding-right: 6px;
-	padding-left: 6px;;
+    padding-right: 6px;
+    padding-left: 6px;;
 }
 
 #temperature.critical {
@@ -206,7 +211,7 @@ tooltip {
 
 #pulseaudio-slider,
 #pulseaudio {
-	color: @color13;
+    color: @color13;
 }
 
 #pulseaudio.muted {
@@ -214,19 +219,19 @@ tooltip {
 }
 
 #memory {
-	color: @sapphire;
+    color: @sapphire;
 }
 
 #cpu {
-	color: @mauve;
+    color: @mauve;
 }
 
 #battery {
-	color: @rosewater;
+    color: @rosewater;
 }
 
 #disk {
-	color: @sky;
+    color: @sky;
 }
 
 #temperature.critical {
@@ -234,28 +239,30 @@ tooltip {
 }
 
 #battery.critical:not(.charging) {
-	color: #f53c3c;
-	animation-name: blink;
-	animation-duration: 3.0s;
-	animation-timing-function: steps(12);
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 3.0s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #custom-hypridle,
 #custom-lock,
 #idle_inhibitor {
     color: @teal;
+    border-bottom: 2px solid @border-color;
 }
 
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #39FF14;
+    color: #39FF14;
+    border-bottom: 2px solid @border-color;
 }
 
 #clock {
-	color: @foreground;
+    color: @foreground;
     border-radius: 15px;
 }
 

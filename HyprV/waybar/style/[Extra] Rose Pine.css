@@ -40,15 +40,15 @@ tooltip {
 #taskbar button,
 #workspaces button {
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 0px;
-	border-bottom: 2px;
-	border-color: #2B5D34;
-	border-style: solid;
-	border-radius: 10px;
+    border-bottom: 2px;
+    border-color: #2B5D34;
+    border-style: solid;
+    border-radius: 10px;
     padding-left: 2px;
     padding-right: 4px;
-	background: @main-bg;
+    background: @main-bg;
     color: @main-fg;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
@@ -74,12 +74,12 @@ tooltip {
 
 #taskbar button {
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 0px;
-	border-bottom: 2px;
-	border-color: #2B5D34;
-	border-style: solid;
-	border-radius: 10px;
+    border-bottom: 2px;
+    border-color: #2B5D34;
+    border-style: solid;
+    border-radius: 10px;
     padding-left: 3px;
     padding-right: 3px;
     color: @wb-color;
@@ -126,13 +126,16 @@ tooltip {
 #window,
 #wireplumber,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -147,7 +150,9 @@ tooltip {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -161,24 +166,25 @@ tooltip {
     color: @main-fg;
     background: @main-bg;
     opacity: 1;
-	border-bottom: 2px;
-	border-color: #2B5D34;
-	border-style: solid;
-	border-radius: 10px;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-right: 6px;
-	padding-left: 6px;
+    border-bottom: 2px;
+    border-color: #2B5D34;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 6px;
+    padding-left: 6px;
 }
 
 #temperature.critical {
-  	background-color: red;
+    background-color: red;
 }
 
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #39FF14;
+    color: #39FF14;
+    border-bottom: 2px;
 }
 
 @keyframes blink {
@@ -199,13 +205,13 @@ tooltip {
 }
 
 #backlight {
-	padding-right: 2px;
+    padding-right: 2px;
 }
 #network {
-	padding-right: 12px;
+    padding-right: 12px;
 }
 #custom-power {
-	padding-right: 1px;
+    padding-right: 1px;
 }
 #group-motherboard,
 #group-laptop,
@@ -216,23 +222,23 @@ tooltip {
 
 #backlight-slider slider,
 #pulseaudio-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
+    min-width: 0px;
+    min-height: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
 }
 
 #backlight-slider trough,
 #pulseaudio-slider trough {
-	min-width: 80px;
-	min-height: 5px;
-	border-radius: 5px;
+    min-width: 80px;
+    min-height: 5px;
+    border-radius: 5px;
 }
 
 #backlight-slider highlight,
 #pulseaudio-slider highlight {
-	min-height: 10px;
-	border-radius: 5px;
+    min-height: 10px;
+    border-radius: 5px;
 }

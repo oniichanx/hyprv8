@@ -14,7 +14,7 @@ font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 
 window#waybar {
     background: black;
-	border-radius: 12px;
+    border-radius: 12px;
 }
 
 window#waybar.hidden {
@@ -22,7 +22,7 @@ window#waybar.hidden {
 }
 
 tooltip {
-	color: @foreground;
+    color: @foreground;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
 }
@@ -39,8 +39,8 @@ tooltip label {
 .modules-right {
     border: 0px solid #b4befe;
     border-radius: 10px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     padding-right: 4px;
     padding-left: 4px;
 }
@@ -49,7 +49,7 @@ tooltip label {
 #workspaces button {
     color: @color12;
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 4px;
     border-radius: 9px;
     animation: gradient_f 20s ease-in infinite;
@@ -79,7 +79,7 @@ tooltip label {
 #workspaces button:hover {
     color: @color9;
     border-radius: 15px;
- 	padding-left: 2px;
+    padding-left: 2px;
     padding-right: 2px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
@@ -108,13 +108,16 @@ tooltip label {
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-nightlight,
 #custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
+#custom-dot_update,
 #custom-file_manager,
 #custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
+#custom-nightlight,
 #custom-lock,
 #custom-hint,
 #custom-hypridle,
@@ -129,7 +132,9 @@ tooltip label {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
+#custom-weather2,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -142,10 +147,10 @@ tooltip label {
 #custom-weather.sunnyDay {
     color: @foreground;
     border-radius: 8px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 6px;
-	padding-left: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 6px;
+    padding-left: 6px;
 }
 
 #temperature.critical {
@@ -161,37 +166,38 @@ tooltip label {
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #39FF14;
+    color: #39FF14;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.2);
 }
 
 #battery.critical:not(.charging) {
-	color: #f53c3c;
-	animation-name: blink;
-	animation-duration: 3.0s;
-	animation-timing-function: steps(12);
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 3.0s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #backlight-slider slider,
 #pulseaudio-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
+    min-width: 0px;
+    min-height: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
 }
 
 #backlight-slider trough,
 #pulseaudio-slider trough {
-	min-width: 80px;
-	min-height: 5px;
-	border-radius: 5px;
+    min-width: 80px;
+    min-height: 5px;
+    border-radius: 5px;
 }
 
 #backlight-slider highlight,
 #pulseaudio-slider highlight {
-	min-height: 10px;
-	border-radius: 5px;
+    min-height: 10px;
+    border-radius: 5px;
 }

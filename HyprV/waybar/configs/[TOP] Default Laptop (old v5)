@@ -1,6 +1,6 @@
 /* ---- 💫 https://github.com/oniichanx 💫 ---- */
 
-// ### DEFAULT - Top ### //
+// ### DEFAULT Laptop  - Top ### //
 {
 "include": [
   "$HOME/.config/waybar/Modules",
@@ -38,7 +38,7 @@
 	"hyprland/workspaces#rw",
 	"clock",
 	"custom/separator#dot-line",
-	"custom/weather",
+	"custom/weather2",
 	"custom/separator#dot-line",
 	"idle_inhibitor",	
 	"custom/hint",	
@@ -48,11 +48,13 @@
 	"tray",
 	"network#speed",
 	"custom/separator#dot-line",
+	"group/laptop",
+	"custom/separator#dot-line",
 	"group/mobo_drawer",
 	"custom/separator#line",  
 	"group/audio",
-	"custom/nightlight",
 	"custom/separator#dot-line", 
+	"custom/nightlight",
 	"group/status",
 	],
 }
