@@ -588,6 +588,7 @@ to this one
   <summary><strong> You do wanna my wallpaper set? </strong></summary>
   
 - ### ([Wallpaper Set](https://github.com/oniichanx/neofetch/tree/main/wallpaper))
+- ### ([Wallpaper Website](https://oniichanx.github.io/New-Wallpapar-Website/))
 </details>
 </details>
 
