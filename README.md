@@ -680,11 +680,17 @@ ntsync
 ---
 
 Restart your distro, and NTsync should work
-
----
 You can also just if you want to load it immediately (this doesn't persist on reboot) 
 ```
 sudo modprobe ntsync
+```
+
+---
+
+if you use steam need to put it in launcher options
+
+```
+PROTON_USE_NTSYNC=1 %command%
 ```
 
 ---
