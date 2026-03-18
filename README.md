@@ -679,8 +679,7 @@ ntsync
 ```
 ---
 
-Restart your distro, and NTsync should work
-You can also just if you want to load it immediately (this doesn't persist on reboot) 
+Restart your distro, and NTsync should work but You can also just if you want to load it immediately (this doesn't persist on reboot) 
 ```
 sudo modprobe ntsync
 ```
