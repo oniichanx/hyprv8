@@ -666,18 +666,23 @@ systemctl --user restart pipewire wireplumber
 </details>
 
 <details>
-  <summary><strong> How To use NTsync </strong></summary>
+  <summary><strong> How to use ntsync </strong></summary>
 
 ---
 To use NTsync, you need Proton GE and Kernel 6.14 or newer. Then create a file called in
 ```
 sudo nano /etc/modules-load.d/ntsync.conf
 ```
-and add inside it
+And add inside it
 ```
 ntsync
 ```
 Restart your distro, and NTsync should work
+
+You can also just if you want to load it immediately (this doesn't persist on reboot) 
+```
+sudo modprobe ntsync
+```
 
 ---
 
