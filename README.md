@@ -666,48 +666,11 @@ systemctl --user restart pipewire wireplumber
 </details>
 
 <details>
-  <summary><strong> How to reroute permanently a microphone to make it mono? on PIPEWIRE </strong></summary>
+  <summary><strong> How to using Ntsync </strong></summary>
 
 ---
-- This is find alse input or audio interface name  
 ```
-pw-dump | grep alsa_input
-```
-- Make folder for configs we need to create file
-```
-mkdir -p ~/.config/pipewire/pipewire.conf.d/
-```
-- Create file config we need to do whatever name your want
-```
-nano ~/.config/pipewire/pipewire.conf.d/mono-umc22.conf
-```
-- This config need to replace the name of your card in `node.target` by the one that you get when you run `pw-dump | grep alsa_input`
-```
-context.modules = [
-    # plenty of existing { ... } blocks, then paste this:
-    # Alternate microphone-only mono source
-    {   name = libpipewire-module-loopback
-        args = {
-            node.description = "UR22 Microphone"
-            capture.props = {
-                node.name = "capture.UR22_Mic"
-                audio.position = [ FL, FR ]
-                stream.dont-remix = true
-                node.target = "alsa_input.usb-Burr-Brown_from_TI_USB_Audio_CODEC-00.analog-stereo-input"
-                node.passive = true
-            }
-            playback.props = {
-                node.name = "capture.UR22_Mic"
-                media.class = "Audio/Source"
-                audio.position = [ MONO ]
-            }
-        }
-    }
-]
-```
-- Restart pipewire when restart is done your sure see name `node.description` your set is on `pavucontrol`
-```
-systemctl --user restart pipewire wireplumber
+sudo nano /etc/modules-load.d/ntsync.conf
 ```
 ---
 
