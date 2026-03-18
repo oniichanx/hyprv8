@@ -672,6 +672,10 @@ systemctl --user restart pipewire wireplumber
 ```
 sudo nano /etc/modules-load.d/ntsync.conf
 ```
+and add inside it
+```
+ntsync
+```
 ---
 
 </details>
