@@ -677,6 +677,8 @@ and add inside it
 ```
 ntsync
 ```
+Restart your distro, and NTsync should work
+
 ---
 
 </details>
